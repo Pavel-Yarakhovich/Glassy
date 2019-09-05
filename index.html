@@ -14,101 +14,143 @@
 <body>
 
 	<header class="main-header">
-		<div class="container main-header-container">
-		 <div class="main-header__logo">
-			  <img src="img/Logo.png" alt="Логотип" width="154" height="64">
-		 </div>
-		 <nav class="main-header__menu">
-			  <ul class="menu__list">
-				   <li class="menu__item menu__item_active">
-					    <a href="#" target="_self" title="Каталог">Каталог</a>
-				   </li>
-				   <li class="menu__item menu__item_active">
-						   <a href="#" target="_self" title="Доставка и оплата">Доставка и оплата</a>
-				   </li>
-				   <li class="menu__item menu__item_active">
-						   <a href="#" target="_self" title="О Компании">О Компании</a>
-				   </li>
-			  </ul>
-		 </nav>
-		 <div class="main-header__buttons">
-				 <div class="btn main-header__btn main-header__btn-find">
-					  <a  href="#" target="_self" title="Поиск по сайту"></a>
+			<div class="container main-header-container">
+					<div class="main-header__logo">
+							<img src="img/Logo.png" alt="Логотип" width="154" height="64">
 					</div>
-					<div class="btn main-header__btn main-header__btn-enter">
-					  <a  href="#" target="_self" title="Вход в учётную запись">Вход</a>
+					<nav class="main-header__menu">
+							<ul class="menu__list">
+									<li class="menu__item menu__item_active">
+											<a class="menu__item__btn" href="#" target="_self" title="Каталог">Каталог</a>
+											<ul class="menu__item__submenu">
+													<li class="submenu__item">
+															<a href="#" target="_self" title="Новинки">Новинки</a>
+													</li>
+													<li class="submenu__item">
+															<a href="#" target="_self" title="Сливочное">Сливочное</a>
+													</li>
+													<li class="submenu__item">
+															<a href="#" target="_self" title="Щербеты">Щербеты</a>
+													</li>
+													<li class="submenu__item">
+															<a href="#" target="_self" title="Фруктовый лед">Фруктовый лед</a>
+													</li>
+													<li class="submenu__item">
+															<a href="#" target="_self" title="Мелорин">Мелорин</a>
+													</li>
+											</ul>
+									</li>
+									<li class="menu__item menu__item_active">
+											<a class="menu__item__btn" href="#" target="_self" title="Доставка и оплата">Доставка и оплата</a>
+									</li>
+									<li class="menu__item menu__item_active">
+											<a class="menu__item__btn" href="#" target="_self" title="О Компании">О Компании</a>
+									</li>
+							</ul>
+					</nav>
+					<div class="main-header__buttons">
+							<a  class="btn main-header__btn main-header__btn-find" href="#" target="_self" title="Поиск по сайту"></a>
+							<a  class="btn main-header__btn main-header__btn-enter" href="#" target="_self" title="Вход в учётную запись">Вход</a>
+							<a  class="btn main-header__btn main-header__btn-bin" href="#" target="_self" title="Корзина">Пусто</a>
 					</div>
-					<div class="btn main-header__btn main-header__btn-bin">
-					  <a  href="#" target="_self" title="Корзина">Пусто</a>
-				 </div>
 			</div>
-		</div>
 	</header>
 	
 <main class="main-content">
-	<div class="container">
+	 <div class="container">
 <!-- сделать с помощью радиокнопок -->
-	 <div class="main-content__slider">
-			 <div class="slider__breadcrumbs">
-						<a class="breadcrumbs__item breadcrumbs__item_active" href="#" target="" title=""></a>
-						<a class="breadcrumbs__item" href="#" target="" title=""></a>
-						<a class="breadcrumbs__item" href="#" target="" title=""></a>
+	   <div class="main-content__slider">			 						
+						<input type="radio" name="slider" id="slider-radio-1" value="slider-1" checked>
+								<label class="breadcrumbs__item" for="slider-radio-1"></label>														
+						<input type="radio" name="slider" id="slider-radio-2" value="slider-2">
+								<label class="breadcrumbs__item" for="slider-radio-2"></label>														
+						<input type="radio" name="slider" id="slider-radio-3" value="slider-3">
+								<label class="breadcrumbs__item" for="slider-radio-3"></label>				
+						<div class="slider__proposal-1">
+								<p class="slider__proposal__title">Крем-брюле и пломбир<br> с малиновым джемом</p>
+								<a class="btn-red slider__btn" href="#" target="_self" title="Заказать мороженое">Давайте оба!</a>
+						</div>
+						<div class="slider__proposal-2">
+								<p class="slider__proposal__title">Хрен-брюле и пломбир<br> с малиновым джемом</p>
+								<a class="btn-red slider__btn" href="#" target="_self" title="Заказать мороженое">Давайте оба!</a>
+						</div>
+						<div class="slider__proposal-3">
+								<p class="slider__proposal__title">Крем-брюле и шашлык<br> с малиновым джемом</p>
+								<a class="btn-red slider__btn" href="#" target="_self" title="Заказать мороженое">Давайте три!</a>
+						</div>				
+						<div class="slider__info">
+								<p class="slider__info__working-time">с 10 до 20, ежедневно</p>
+								<a class="slider__info__phone-number" href="tel:8 812 4502525" title="Связаться с компанией">8 812 450-25-25</a>
+						</div>
 				</div>
-				<div class="slider__proposal">
-						<p class="slider__proposal__title">Крем-брюле и пломбир<br> с малиновым джемом</p>
-						<a class="btn slider__btn" href="#" target="_self" title="Заказать мороженое">Давайте оба!</a>
-				</div>
-				<div class="slider__info">
-						<p class="slider__info__working-time">С 10 до 20, ежедневно</p>
-						<a class="slider__info__phone-number" href="tel:8 812 4502525" title="Связаться с компанией">8 812 450-25-25</a>
-				</div>
-		</div>
 
 		<section class="main-content__proposals">
 			 <div class="main-content__proposals__item main-content__proposals__item-1">
 						<p class="proposals__item__title">Малинка даром!</p>
 						<p class="proposals__item__text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-						<a class="btn proposals__item__btn" href="#" target="_self" title="Хочу варенье!">Хочу варенье!</a>
+						<a class="btn-red proposals__item__btn" href="#" target="_self" title="Хочу варенье!">Хочу варенье!</a>
 				</div>
 				<div class="main-content__proposals__item main-content__proposals__item-2">
 						<p class="proposals__item__title">Шоколадки даром!</p>
 						<p class="proposals__item__text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-						<a class="btn proposals__item__btn" href="#" target="_self" title="Хочу шоколадки!">Хочу шоколадки!</a>
+						<a class="btn-red proposals__item__btn" href="#" target="_self" title="Хочу шоколадки!">Хочу шоколадки!</a>
 				</div>
 		</section>
 
 		<section class="main-content__popular-items">
 			 <article class="popular-items__item popular-items__item-1">
-						<img class="popular-items__img" src="img/hit-1.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
-						<p class="popular-items__price popular-items__item-1__price"><span>310 &#8381;</span>/кг</p>
-						<p class="popular-items__description popular-items__item-1__description">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-						<a class="btn popular-items__btn" href="#" target="_self" title="Быстрый просмотр">Быстрый просмотр</a>
+						<img class="popular-items__img" 
+											src="img/hit-1.png" 
+											alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" 
+											width="267" height="267">
+						<p class="popular-items__price popular-items__item-1__price">
+								<span>310 &#8381;</span>/кг
+						</p>
+						<a class="popular-items__description popular-items__item-1__description linkable">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+						<a class="btn-red popular-items__btn" href="#" target="_self" title="Быстрый просмотр">Быстрый просмотр</a>
 				</article>
 				
 				<article class="popular-items__item popular-items__item-2">
-						<img class="popular-items__img" src="img/hit-2.png" alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267">
-						<p class="popular-items__price popular-items__item-2__price"><span>380 &#8381;</span>/кг</p>
-						<p class="popular-items__description popular-items__item-2__description">Сливочно-кофейное с кусочками шоколада</p>
-						<a class="btn popular-items__btn" href="#" target="_self" title="Быстрый просмотр">Быстрый просмотр</a>
+						<img class="popular-items__img" 
+											src="img/hit-2.png" 
+											alt="Сливочно-кофейное с кусочками шоколада" 
+											width="267" height="267">
+						<p class="popular-items__price popular-items__item-2__price">
+								<span>380 &#8381;</span>/кг
+						</p>
+						<a class="popular-items__description popular-items__item-2__description linkable">Сливочно-кофейное с кусочками шоколада</a>
+						<a class="btn-red popular-items__btn" href="#" target="_self" title="Быстрый просмотр">Быстрый просмотр</a>
 				</article>
 
 				<article class="popular-items__item popular-items__item-3">
-						<img class="popular-items__img" src="img/hit-3.png" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267">
-						<p class="popular-items__price popular-items__item-3__price"><span>355 &#8381;</span>/кг</p>
-						<p class="popular-items__description popular-items__item-3__description">Сливочно-клубничное с присыпкой из белого шоколада</p>
-						<a class="btn popular-items__btn" href="#" target="_self" title="Быстрый просмотр">Быстрый просмотр</a>
+						<img class="popular-items__img" 
+											src="img/hit-3.png" 
+											alt="Сливочно-клубничное с присыпкой из белого шоколада" 
+											width="267" height="267">
+						<p class="popular-items__price popular-items__item-3__price">
+								<span>355 &#8381;</span>/кг
+						</p>
+						<a class="popular-items__description popular-items__item-3__description linkable">Сливочно-клубничное с присыпкой из белого шоколада</a>
+						<a class="btn-red popular-items__btn" href="#" target="_self" title="Быстрый просмотр">Быстрый просмотр</a>
 				</article>
 
 				<article class="popular-items__item popular-items__item-4">
-						<img class="popular-items__img" src="img/hit-4.png" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267">
-						<p class="popular-items__price popular-items__item-4__price"><span>415 &#8381;</span>/кг</p>
-						<p class="popular-items__description popular-items__item-4__description">Сливочное крем-брюле с карамельной подливкой</p>
-						<a class="btn popular-items__btn" href="#" target="_self" title="Быстрый просмотр">Быстрый просмотр</a>
+						<img class="popular-items__img" 
+											src="img/hit-4.png" 
+											alt="Сливочное крем-брюле с карамельной подливкой" 
+											width="267" height="267">
+						<p class="popular-items__price popular-items__item-4__price">
+								<span>415 &#8381;</span>/кг
+						</p>
+						<a class="popular-items__description popular-items__item-4__description linkable">Сливочное крем-брюле с карамельной подливкой</a>
+						<a class="btn-red popular-items__btn" href="#" target="_self" title="Быстрый просмотр">Быстрый просмотр</a>
 				</article>
 		</section>
 
 		<section class="main-content__features">
-				<p class="features__title">Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</p>
+				<p class="features__title">
+					Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес
+				</p>
 				<div class="features__items">
 						<p class="features__items__item features__items__item-1">
 							Все наше мороженое изготавливается на собственном производстве с использованием современного оборудования и проверенных временем технологий.
@@ -135,49 +177,61 @@
 							Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
 						</p>
 						<form class="subscribe__form" action="#" method="POST">
-							<input type="email" name="email" 
-														placeholder="Электронная почта">
-							<button class="btn subscribe-btn" type="submit" value="Отправить">Отправить</button>
+								<input type="email" name="email" placeholder="Электронная почта">
+								<button class="btn-red subscribe-btn" type="submit" value="Отправить">Отправить</button>
 						</form>
 				</div>
-		</section>
 
-		<section class="main-content__contact-us">
-			 <div class="contact-us__contacts">
+				<div class="contact-us__contacts">
 						<div class="contacts__adress">
-							<p>Адрес главного офиса и офлайн магазина:</p>
-							<p>ул.Большая Конюшенная 19/8, Санкт-Петербург</p>
+								<p>Адрес главного офиса<br> и офлайн магазина:</p>
+								<p class="bold">ул.Большая Конюшенная 19/8, Санкт-Петербург</p>
 						</div>
 						<div class="contacts__phone">
-							<p>Для заказов по телефону:</p>
-							<a href="tel:8-812-450-25-25" title="Позвонить сейчас">8 812 450-25-25</a>
-							<p>(с 10 до 20 ежедневно)</p>
+								<p>Для заказов по телефону:</p>
+								<a class="bold" href="tel:8-812-450-25-25" title="Позвонить сейчас">8 812 450-25-25</a>
+								<p>(с 10 до 20 ежедневно)</p>
 						</div>
-						<a class="btn contacts__btn" href="#" target="" title="">Форма обратной связи</a>
+						<a class="btn-red btn contacts__btn" href="#" target="_self" title="Мы с вами свяжемся">Форма обратной связи</a>
 				</div>
+
 		</section>
- </div>
+</div>
+
+		<section class="main-content__contact-us">
+				<iframe class="map" src="https://www.google.com/maps/d/u/0/embed?mid=1dVnV8hA3V-AqFMH8ceyAVkH2fdzRdpU0" 
+												width="640" height="480">
+				</iframe>		
+		</section> 
 </main>
 
 <footer class="main-footer">
-	<div class="container main-footer__container">
-		<div class="main-footer__socials">
-				<a class="socials socials-tw" href="#" target="_blank" title=""></a>
-				<a class="socials socials-in" href="#" target="_blank" title=""></a>
-				<a class="socials socials-fb" href="#" target="_blank" title=""></a>
-				<a class="socials socials-vk" href="#" target="_blank" title=""></a>
+		<div class="container main-footer__container">
+				<div class="main-footer__socials">
+						<a class="socials socials-tw" href="#" target="_blank" title="Twitter"></a>
+						<a class="socials socials-in" href="#" target="_blank" title="Instagram"></a>
+						<a class="socials socials-fb" href="#" target="_blank" title="Facebook"></a>
+						<a class="socials socials-vk" href="#" target="_blank" title="ВКонтакте"></a>
+				</div>
+				<div class="main-footer__documents">
+							<div class="documents__column documents__column-1">
+									<a class="documents linkable" href="#" target="_self" title="Для поставщиков">Для поставщиков</a>
+									<a class="documents linkable" href="#" target="_self" title="О производстве">О производстве</a>
+							</div>
+							<div class="documents__column documents__column-1">
+									<a class="documents linkable" href="#" target="_self" title="Наши документы">Наши документы</a>
+									<a class="documents linkable" href="#" target="_self" title="Экологические стандарты">Экологические стандарты</a>
+							</div>
+				</div>
+				<div class="main-footer__copyright">
+						<a class="copyright__logo" href="#" target="_blank" title="HTML Academy">
+								<img src="img/logo-htmlacademy-small.png" width="108" height="39" alt="HTML Academy">
+						</a>
+						<p class="copyright__text">
+							Сделано в <a class="linkable" href="#" target="_blank" title="Образовательные курсы">HTML Academy</a> &copy; 2017
+						</p>
+				</div>
 		</div>
-		<div class="main-footer__documents">
-			 <a class="documents" href="#" target="_self" title="Для поставщиков">Для поставщиков</a>
-				<a class="documents" href="#" target="_self" title="Наши документы">Наши документы</a>
-				<a class="documents" href="#" target="_self" title="О производстве">О производстве</a>
-				<a class="documents" href="#" target="_self" title="Экологические стандарты">Экологические стандарты</a>
-		</div>
-	 <div class="main-footer__copyright">
-				<a class="copyright__logo" href="#" target="_blank" title="HTML Academy"></a>
-				<p class="copyright__text">Сделано в HTML Academy &copy; 2017</p>
-		</div>
-	</div>
 </footer>
 
 </body>

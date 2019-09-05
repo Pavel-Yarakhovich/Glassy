@@ -5,34 +5,44 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/style.css">
 
 	<title>Catalog</title>
 </head>
 
 <body>
-		<header class="main-header container">
-				<div class="main-header__logo">
-						<img src="" alt="Логотип" width="" height="">
+		<header class="main-header">
+				<div class="container main-header-container">
+					<div class="main-header__logo">
+							<img src="img/Logo.png" alt="Логотип" width="154" height="64">
+					</div>
+					<nav class="main-header__menu">
+							<ul class="menu__list">
+									<li class="menu__item menu__item_active">
+											<a class="menu__item__btn" href="#" target="_self" title="Каталог">Каталог</a>
+											<ul class="menu__item__submenu">
+													<li class="submenu__item"><a href="#" target="_self" title="Новинки">Новинки</a></li>
+													<li class="submenu__item"><a href="#" target="_self" title="Сливочное">Сливочное</a></li>
+													<li class="submenu__item"><a href="#" target="_self" title="Щербеты">Щербеты</a></li>
+													<li class="submenu__item"><a href="#" target="_self" title="Фруктовый лед">Фруктовый лед</a></li>
+													<li class="submenu__item"><a href="#" target="_self" title="Мелорин">Мелорин</a></li>
+											</ul>
+									</li>
+									<li class="menu__item menu__item_active">
+											<a class="menu__item__btn" href="#" target="_self" title="Доставка и оплата">Доставка и оплата</a>
+									</li>
+									<li class="menu__item menu__item_active">
+											<a class="menu__item__btn" href="#" target="_self" title="О Компании">О Компании</a>
+									</li>
+							</ul>
+					</nav>
+					<div class="main-header__buttons">
+									<a  class="btn main-header__btn main-header__btn-find" href="#" target="_self" title="Поиск по сайту"></a>
+									<a  class="btn main-header__btn main-header__btn-enter" href="#" target="_self" title="Вход в учётную запись">Вход</a>
+									<a  class="btn main-header__btn main-header__btn-bin" href="#" target="_self" title="Корзина">Пусто</a>
+					</div>
 				</div>
-				<nav class="main-header__menu">
-						<ul class="menu__list">
-								<li class="menu__item menu__item_active">
-										<a href="#" target="" title="">Каталог</a>
-								</li>
-								<li class="menu__item menu__item_active">
-										<a href="#" target="" title="">Доставка и оплата</a>
-								</li>
-								<li class="menu__item menu__item_active">
-										<a href="#" target="" title="">О Компании</a>
-								</li>
-						</ul>
-				</nav>
-				<div class="main-header__buttons">
-						<a class="btn main-header__btn main-header__btn-find" target="" title="Поиск по сайту"></a>
-						<a class="btn main-header__btn main-header__btn-enter" target="" title="Вход в учётнуюзапись">Вход</a>
-						<a class="btn main-header__btn main-header__btn-bin" target="" title="Корзина">Пусто</a>
-				</div>
-		</header>
+			</header>
 
 		<main class="container">
 
@@ -80,79 +90,114 @@
 						</fieldset>
 				</form>
 
-				<section class="main__items-list">
-					 <article class="popular-items__item popular-items__item-1">
-								<img src="#" alt="" width="" height="">
-								<p class="popular-items__item-1__price">310 &#8381;/кг</p>
-								<p class="popular-items__item-1__description">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+				<section class="main-content__popular-items">
+						<article class="popular-items__item popular-items__item-1">
+								<img class="popular-items__img" src="img/hit-1.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
+								<p class="popular-items__price popular-items__item-1__price">
+										<span>310 &#8381;</span>/кг
+								</p>
+								<a class="popular-items__description popular-items__item-1__description linkable">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+								<a class="btn-red popular-items__btn" href="#" target="_self" title="Быстрый просмотр">Быстрый просмотр</a>
 						</article>
-
+						
 						<article class="popular-items__item popular-items__item-2">
-								<img src="#" alt="" width="" height="">
-								<p class="popular-items__item-2__price">380 &#8381;/кг</p>
-								<p class="popular-items__item-2__description">Сливочно-кофейное с кусочками шоколада</p>
+								<img class="popular-items__img" src="img/hit-2.png" alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267">
+								<p class="popular-items__price popular-items__item-2__price">
+										<span>380 &#8381;</span>/кг
+								</p>
+								<a class="popular-items__description popular-items__item-2__description linkable">Сливочно-кофейное с кусочками шоколада</a>
+								<a class="btn-red popular-items__btn" href="#" target="_self" title="Быстрый просмотр">Быстрый просмотр</a>
 						</article>
-
+		
 						<article class="popular-items__item popular-items__item-3">
-								<img src="#" alt="" width="" height="">
-								<p class="popular-items__item-3__price">355 &#8381;/кг</p>
-								<p class="popular-items__item-3__description">Сливочно-клубничное с присыпкой из белого шоколада</p>
+								<img class="popular-items__img" src="img/hit-3.png" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267">
+								<p class="popular-items__price popular-items__item-3__price">
+										<span>355 &#8381;</span>/кг
+								</p>
+								<a class="popular-items__description popular-items__item-3__description linkable">Сливочно-клубничное с присыпкой из белого шоколада</a>
+								<a class="btn-red popular-items__btn" href="#" target="_self" title="Быстрый просмотр">Быстрый просмотр</a>
 						</article>
-
+		
 						<article class="popular-items__item popular-items__item-4">
-								<img src="#" alt="" width="" height="">
-								<p class="popular-items__item-4__price">415 &#8381;/кг</p>
-								<p class="popular-items__item-4__description">Сливочное крем-брюле с карамельной подливкой</p>
+								<img class="popular-items__img" src="img/hit-4.png" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267">
+								<p class="popular-items__price popular-items__item-4__price">
+										<span>415 &#8381;</span>/кг
+								</p>
+								<a class="popular-items__description popular-items__item-4__description linkable">Сливочное крем-брюле с карамельной подливкой</a>
+								<a class="btn-red popular-items__btn" href="#" target="_self" title="Быстрый просмотр">Быстрый просмотр</a>
 						</article>
 
-						<article class="popular-items__item popular-items__item-5">
-								<img src="#" alt="" width="" height="">
-								<p class="popular-items__item-5__price">325 &#8381;/кг</p>
-								<p class="popular-items__item-5__description">Сливочное с брусничным джемом</p>
+						<article class="popular-items__item popular-items__item-1">
+								<img class="popular-items__img" src="img/hit-1.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
+								<p class="popular-items__price popular-items__item-1__price">
+										<span>310 &#8381;</span>/кг
+								</p>
+								<a class="popular-items__description popular-items__item-1__description linkable">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+								<a class="btn-red popular-items__btn" href="#" target="_self" title="Быстрый просмотр">Быстрый просмотр</a>
+						</article>
+						
+						<article class="popular-items__item popular-items__item-2">
+								<img class="popular-items__img" src="img/hit-2.png" alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267">
+								<p class="popular-items__price popular-items__item-2__price">
+										<span>380 &#8381;</span>/кг
+								</p>
+								<a class="popular-items__description popular-items__item-2__description linkable">Сливочно-кофейное с кусочками шоколада</a>
+								<a class="btn-red popular-items__btn" href="#" target="_self" title="Быстрый просмотр">Быстрый просмотр</a>
+						</article>
+		
+						<article class="popular-items__item popular-items__item-3">
+								<img class="popular-items__img" src="img/hit-3.png" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267">
+								<p class="popular-items__price popular-items__item-3__price">
+										<span>355 &#8381;</span>/кг
+								</p>
+								<a class="popular-items__description popular-items__item-3__description linkable">Сливочно-клубничное с присыпкой из белого шоколада</a>
+								<a class="btn-red popular-items__btn" href="#" target="_self" title="Быстрый просмотр">Быстрый просмотр</a>
+						</article>
+		
+						<article class="popular-items__item popular-items__item-4">
+								<img class="popular-items__img" src="img/hit-4.png" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267">
+								<p class="popular-items__price popular-items__item-4__price">
+										<span>415 &#8381;</span>/кг
+								</p>
+								<a class="popular-items__description popular-items__item-4__description linkable">Сливочное крем-брюле с карамельной подливкой</a>
+								<a class="btn-red popular-items__btn" href="#" target="_self" title="Быстрый просмотр">Быстрый просмотр</a>
 						</article>
 
-						<article class="popular-items__item popular-items__item-6">
-								<img src="#" alt="" width="" height="">
-								<p class="popular-items__item-6__price">410 &#8381;/кг</p>
-								<p class="popular-items__item-6__description">Сливочно-черничное с цельными ягодами черники</p>
+						<article class="popular-items__item popular-items__item-1">
+								<img class="popular-items__img" src="img/hit-1.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
+								<p class="popular-items__price popular-items__item-1__price">
+										<span>310 &#8381;</span>/кг
+								</p>
+								<a class="popular-items__description popular-items__item-1__description linkable">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+								<a class="btn-red popular-items__btn" href="#" target="_self" title="Быстрый просмотр">Быстрый просмотр</a>
 						</article>
-
-						<article class="popular-items__item popular-items__item-7">
-								<img src="#" alt="" width="" height="">
-								<p class="popular-items__item-7__price">375 &#8381;/кг</p>
-								<p class="popular-items__item-7__description">Сливочно-лимонное с карамельной присыпкой</p>
+						
+						<article class="popular-items__item popular-items__item-2">
+								<img class="popular-items__img" src="img/hit-2.png" alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267">
+								<p class="popular-items__price popular-items__item-2__price">
+										<span>380 &#8381;</span>/кг
+								</p>
+								<a class="popular-items__description popular-items__item-2__description linkable">Сливочно-кофейное с кусочками шоколада</a>
+								<a class="btn-red popular-items__btn" href="#" target="_self" title="Быстрый просмотр">Быстрый просмотр</a>
 						</article>
-
-						<article class="popular-items__item popular-items__item-8">
-								<img src="#" alt="" width="" height="">
-								<p class="popular-items__item-8__price">320 &#8381;/кг</p>
-								<p class="popular-items__item-8__description">Сливочное с шоколадной стружкой</p>
+		
+						<article class="popular-items__item popular-items__item-3">
+								<img class="popular-items__img" src="img/hit-3.png" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267">
+								<p class="popular-items__price popular-items__item-3__price">
+										<span>355 &#8381;</span>/кг
+								</p>
+								<a class="popular-items__description popular-items__item-3__description linkable">Сливочно-клубничное с присыпкой из белого шоколада</a>
+								<a class="btn-red popular-items__btn" href="#" target="_self" title="Быстрый просмотр">Быстрый просмотр</a>
 						</article>
-
-						<article class="popular-items__item popular-items__item-9">
-								<img src="#" alt="" width="" height="">
-								<p class="popular-items__item-9__price">440 &#8381;/кг</p>
-								<p class="popular-items__item-9__description">Сливочно-ванильное с кусочками шоколада</p>
+		
+						<article class="popular-items__item popular-items__item-4">
+								<img class="popular-items__img" src="img/hit-4.png" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267">
+								<p class="popular-items__price popular-items__item-4__price">
+										<span>415 &#8381;</span>/кг
+								</p>
+								<a class="popular-items__description popular-items__item-4__description linkable">Сливочное крем-брюле с карамельной подливкой</a>
+								<a class="btn-red popular-items__btn" href="#" target="_self" title="Быстрый просмотр">Быстрый просмотр</a>
 						</article>
-
-						<article class="popular-items__item popular-items__item-10">
-								<img src="#" alt="" width="" height="">
-								<p class="popular-items__item-10__price">435 &#8381;/кг</p>
-								<p class="popular-items__item-10__description">Сливочное с ментоловым сиропом</p>
-						</article>
-
-						<article class="popular-items__item popular-items__item-11">
-								<img src="#" alt="" width="" height="">
-								<p class="popular-items__item-11__price">355 &#8381;/кг</p>
-								<p class="popular-items__item-11__description">Сливочно с кусочками черного шоколада</p>
-						</article>
-
-						<article class="popular-items__item popular-items__item-12">
-								<img src="#" alt="" width="" height="">
-								<p class="popular-items__item-12__price">420 &#8381;/кг</p>
-								<p class="popular-items__item-12__description">Сливочное с мятным сиропом</p>
-						</article>
-
 				</section>
 
 				<section class="main__pagination">
@@ -175,22 +220,28 @@
 
 		</main>
 
-		<footer class="main-footer container">
-				<div class="main-footer__socials">
-						<a class="socials socials-tw" href="#" target="_blank" title=""></a>
-						<a class="socials socials-in" href="#" target="_blank" title=""></a>
-						<a class="socials socials-fb" href="#" target="_blank" title=""></a>
-						<a class="socials socials-vk" href="#" target="_blank" title=""></a>
-				</div>
-				<div class="main-footer__documents">
-						<a class="documents" href="#" target="_self" title="Для поставщиков">Для поставщиков</a>
-						<a class="documents" href="#" target="_self" title="Наши документы">Наши документы</a>
-						<a class="documents" href="#" target="_self" title="О производстве">О производстве</a>
-						<a class="documents" href="#" target="_self" title="Экологические стандарты">Экологические стандарты</a>
-				</div>
-				<div class="main-footer__copyright">
-						<a class="copyright__logo" href="#" target="_blank" title="HTML Academy"></a>
-						<p class="copyright__text">Сделано в HTML Academy &copy; 2017</p>
+	<footer class="main-footer">
+				<div class="container main-footer__container">
+					<div class="main-footer__socials">
+							<a class="socials socials-tw" href="#" target="_blank" title="Twitter"></a>
+							<a class="socials socials-in" href="#" target="_blank" title="Instagram"></a>
+							<a class="socials socials-fb" href="#" target="_blank" title="Facebook"></a>
+							<a class="socials socials-vk" href="#" target="_blank" title="ВКонтакте"></a>
+					</div>
+					<div class="main-footer__documents">
+								<div class="documents__column documents__column-1">
+										<a class="documents linkable" href="#" target="_self" title="Для поставщиков">Для поставщиков</a>
+										<a class="documents linkable" href="#" target="_self" title="О производстве">О производстве</a>
+							</div>
+							<div class="documents__column documents__column-1">
+										<a class="documents linkable" href="#" target="_self" title="Наши документы">Наши документы</a>
+										<a class="documents linkable" href="#" target="_self" title="Экологические стандарты">Экологические стандарты</a>
+							</div>
+					</div>
+					<div class="main-footer__copyright">
+							<a class="copyright__logo" href="#" target="_blank" title="HTML Academy"><img src="img/logo-htmlacademy-small.png" width="108" height="39" alt="HTML Academy"> </a>
+							<p class="copyright__text">Сделано в <a class="linkable" href="#" target="_blank" title="Образовательные курсы">HTML Academy</a> &copy; 2017</p>
+					</div>
 				</div>
 		</footer>
 
