@@ -13,36 +13,71 @@
 <body>
 		<header class="main-header">
 				<div class="container main-header-container">
-					<div class="main-header__logo">
-							<img src="img/Logo.png" alt="Логотип" width="154" height="64">
-					</div>
-					<nav class="main-header__menu">
-							<ul class="menu__list">
-									<li class="menu__item menu__item_active">
-											<a class="menu__item__btn" href="#" target="_self" title="Каталог">Каталог</a>
-											<ul class="menu__item__submenu">
-													<li class="submenu__item"><a href="#" target="_self" title="Новинки">Новинки</a></li>
-													<li class="submenu__item"><a href="#" target="_self" title="Сливочное">Сливочное</a></li>
-													<li class="submenu__item"><a href="#" target="_self" title="Щербеты">Щербеты</a></li>
-													<li class="submenu__item"><a href="#" target="_self" title="Фруктовый лед">Фруктовый лед</a></li>
-													<li class="submenu__item"><a href="#" target="_self" title="Мелорин">Мелорин</a></li>
-											</ul>
-									</li>
-									<li class="menu__item menu__item_active">
-											<a class="menu__item__btn" href="#" target="_self" title="Доставка и оплата">Доставка и оплата</a>
-									</li>
-									<li class="menu__item menu__item_active">
-											<a class="menu__item__btn" href="#" target="_self" title="О Компании">О Компании</a>
-									</li>
-							</ul>
-					</nav>
-					<div class="main-header__buttons">
-									<a  class="btn main-header__btn main-header__btn-find" href="#" target="_self" title="Поиск по сайту"></a>
-									<a  class="btn main-header__btn main-header__btn-enter" href="#" target="_self" title="Вход в учётную запись">Вход</a>
-									<a  class="btn main-header__btn main-header__btn-bin" href="#" target="_self" title="Корзина">Пусто</a>
-					</div>
+						<div class="main-header__logo">
+								<img src="img/Logo.png" alt="Логотип" width="154" height="64">
+						</div>
+						<nav class="main-header__menu">
+								<ul class="menu__list">
+										<li class="menu__item menu__item_active">
+												<a class="menu__item__btn" href="#" target="_self" title="Каталог">Каталог</a>
+												<ul class="menu__item__submenu">
+														<li class="submenu__item">
+																<a href="#" target="_self" title="Новинки">Новинки</a>
+														</li>
+														<li class="submenu__item">
+																<a href="#" target="_self" title="Сливочное">Сливочное</a>
+														</li>
+														<li class="submenu__item">
+																<a href="#" target="_self" title="Щербеты">Щербеты</a>
+														</li>
+														<li class="submenu__item">
+																<a href="#" target="_self" title="Фруктовый лед">Фруктовый лед</a>
+														</li>
+														<li class="submenu__item">
+																<a href="#" target="_self" title="Мелорин">Мелорин</a>
+														</li>
+												</ul>
+										</li>
+										<li class="menu__item menu__item_active">
+												<a class="menu__item__btn" href="#" target="_self" title="Доставка и оплата">Доставка и оплата</a>
+										</li>
+										<li class="menu__item menu__item_active">
+												<a class="menu__item__btn" href="#" target="_self" title="О Компании">О Компании</a>
+										</li>
+								</ul>
+						</nav>
+						<div class="main-header__buttons">
+								<div class="main-header__button__wrapper">
+										<a  class="btn main-header__btn main-header__btn-find" href="#" target="_self" title="Поиск по сайту"></a>
+												<div class="main-header__buttons__dropdown main-header__buttons__dropdown-find">
+																<input type="search" placeholder="Что ищем?">
+												</div>
+									</div>
+									<div class="main-header__button__wrapper">
+											<a  class="btn main-header__btn main-header__btn-enter" href="#" target="_self" title="Вход в учётную запись">Вход</a>
+													<div class="main-header__buttons__dropdown main-header__buttons__dropdown-enter">
+														<form action="#" method="GET">
+																<input type="email" placeholder="Электронная почта">
+																<input type="password" placeholder="Пароль">
+																<div class="enter__block">
+																		<input type="submit" class="btn-red btn-enter__block" value="Войти">
+																		<div class="enter__block__help-links">
+																				<a class="linkable-negative enter__block__link" href="#" target="_self" title="Забыли пароль?">Забыли пароль?</a>
+																				<a class="linkable-negative enter__block__link" href="#" target="_self" title="Новая регистрация">Новая регистрация</a>
+																		</div>
+																</div>
+														</form>
+													</div>
+									</div>
+									<div class="main-header__button__wrapper">
+											<a  class="btn main-header__btn main-header__btn-bin" href="#" target="_self" title="Корзина">Пусто</a>
+													<div class="main-header__buttons__dropdown main-header__buttons__dropdown-bin">
+															<a class="btn-red btn-bin-order" href="#" target="_self" title="Оформить заказ">Оформить заказ</a>
+													</div>
+									</div>
+						</div>
 				</div>
-			</header>
+		</header>
 
 		<main class="container">
 

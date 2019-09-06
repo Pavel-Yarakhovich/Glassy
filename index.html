@@ -49,9 +49,34 @@
 							</ul>
 					</nav>
 					<div class="main-header__buttons">
-							<a  class="btn main-header__btn main-header__btn-find" href="#" target="_self" title="Поиск по сайту"></a>
-							<a  class="btn main-header__btn main-header__btn-enter" href="#" target="_self" title="Вход в учётную запись">Вход</a>
-							<a  class="btn main-header__btn main-header__btn-bin" href="#" target="_self" title="Корзина">Пусто</a>
+							<div class="main-header__button__wrapper">
+									<a  class="btn main-header__btn main-header__btn-find" href="#" target="_self" title="Поиск по сайту"></a>
+											<div class="main-header__buttons__dropdown main-header__buttons__dropdown-find">
+															<input type="search" placeholder="Что ищем?">
+											</div>
+								</div>
+								<div class="main-header__button__wrapper">
+										<a  class="btn main-header__btn main-header__btn-enter" href="#" target="_self" title="Вход в учётную запись">Вход</a>
+												<div class="main-header__buttons__dropdown main-header__buttons__dropdown-enter">
+													<form action="#" method="GET">
+															<input type="email" placeholder="Электронная почта">
+															<input type="password" placeholder="Пароль">
+															<div class="enter__block">
+																	<input type="submit" class="btn-red btn-enter__block" value="Войти">
+																	<div class="enter__block__help-links">
+																			<a class="linkable-negative enter__block__link" href="#" target="_self" title="Забыли пароль?">Забыли пароль?</a>
+																			<a class="linkable-negative enter__block__link" href="#" target="_self" title="Новая регистрация">Новая регистрация</a>
+																	</div>
+															</div>
+													</form>
+												</div>
+								</div>
+								<div class="main-header__button__wrapper">
+										<a  class="btn main-header__btn main-header__btn-bin" href="#" target="_self" title="Корзина">Пусто</a>
+												<div class="main-header__buttons__dropdown main-header__buttons__dropdown-bin">
+														<a class="btn-red btn-bin-order" href="#" target="_self" title="Оформить заказ">Оформить заказ</a>
+												</div>
+								</div>
 					</div>
 			</div>
 	</header>
