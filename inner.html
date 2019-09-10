@@ -13,13 +13,13 @@
 <body>
 		<header class="main-header">
 				<div class="container main-header-container">
-						<div class="main-header__logo">
+						<a class="main-header__logo" href="index.html" title="Логотип" target="_self">
 								<img src="img/Logo.png" alt="Логотип" width="154" height="64">
-						</div>
+						</a>
 						<nav class="main-header__menu">
 								<ul class="menu__list">
 										<li class="menu__item menu__item_active">
-												<a class="menu__item__btn" href="#" target="_self" title="Каталог">Каталог</a>
+												<a class="menu__item__btn" href="inner.html" target="_self" title="Каталог">Каталог</a>
 												<ul class="menu__item__submenu">
 														<li class="submenu__item">
 																<a href="#" target="_self" title="Новинки">Новинки</a>
@@ -72,6 +72,27 @@
 									<div class="main-header__button__wrapper">
 											<a  class="btn main-header__btn main-header__btn-bin" href="#" target="_self" title="Корзина">Пусто</a>
 													<div class="main-header__buttons__dropdown main-header__buttons__dropdown-bin">
+															<div class="chosen-item">
+																	<img class="chosen-item__img" alt="Мороженое" width="40" height="40" src="img/hit-1.png">
+																	<p class="chosen-item__description">
+																		Пломбир с апельсиновым джемом
+																	</p>
+																	<p class="chosen-item__quantity">
+																		1,5 кг х <span>200 руб.</span>
+																	</p>
+																	<p class="chosen-item__cost">300 руб.</p>
+															</div>
+															<div class="chosen-item chosen-item-2">
+																	<img class="chosen-item__img" alt="Мороженое" width="40" height="40" src="img/hit-1.png">
+																	<p class="chosen-item__description">
+																		Пломбир с апельсиновым джемом
+																	</p>
+																	<p class="chosen-item__quantity">
+																		1,5 кг х <span>200 руб.</span>
+																	</p>
+																	<p class="chosen-item__cost">300 руб.</p>
+															</div>
+															<p class="chosen-item__total-cost">Итого: 750 руб.</p>
 															<a class="btn-red btn-bin-order" href="#" target="_self" title="Оформить заказ">Оформить заказ</a>
 													</div>
 									</div>
@@ -82,46 +103,68 @@
 		<main class="container">
 
 			 <section class="main__service-information">
-						<div class="service-information__breadcrumbs"></div>
-						<div class="service-information__info">
-								<p class="service-information__info__working-time">С 10 до 20, ежедневно</p>
-								<a class="service-information__info__phone-number" href="tel:" title="">8 812 450-25-25</a>
+						<div class="service-information__breadcrumbs">
+								<ul class="breadcrumbs">
+										<li class="breadcrumbs-item">
+												<a class="breadcrumbs-link linkable" href="index.html" tabindex="-1">Главная</a>
+										</li>
+										<li class="breadcrumbs-item">
+												<a class="breadcrumbs-link" href="#">&#187;</a>
+										</li>
+										<li class="breadcrumbs-item">
+												<a class="breadcrumbs-link linkable" href="inner.html">Каталог</a>
+										</li>
+										<li class="breadcrumbs-item">
+												<a class="breadcrumbs-link" href="#">&#187;</a>
+										</li>
+										<li class="breadcrumbs-item">
+												<a class="breadcrumbs-link" href="#">Сливочное</a>
+										</li>
+								</ul>
+						</div>
+						<div class="slider__info">
+								<p class="slider__info__working-time">с 10 до 20, ежедневно</p>
+								<a class="slider__info__phone-number" href="tel:8 812 4502525" title="Связаться с компанией">8 812 450-25-25</a>
 						</div>
 				</section>
 
 				<form class="main__user-choice" action="#" method="get">
-					 <fieldset>
+					 <fieldset class="main__user-choice__fieldset">
 								<legend>Сливочное мороженое</legend>
-								<div class="input-form">
-									<p>Сортировка:</p>
-									<select class="input-form_style" name="sort" id="sort">
-										 <option value="option-1">по популярности</option>
-									</select>
-								</div>
-								<div class="input-form">
-										<p>Сортировка:</p>
-										<input class="input-form_style" type="range" name="price" id="price" min="100" max="500" step="5">
-								</div>
-								<div class="input-form">
-										<p>Сортировка:</p>
-										<div class="input-form_style">
-												<input type="radio" name="fat" id="0%" value="0%"><label for="0%">0%</label>
-												<input type="radio" name="fat" id=less10%" value="less10%"><label for="less10%">до 10%</label>
-												<input type="radio" name="fat" id="less30%" value="less30%"><label for="less30%">до 30%</label>
-												<input type="radio" name="fat" id="more30%" value="more30%"><label for="more30%">выше 30%</label>
-									 </div>
-								</div>
-								<div class="input-form">
-										<p>Наполнители:</p>
-										<div class="input-form_style">
-												<input type="checkbox" name="filler" id="chocolate" value="chocolate"><label for="chocolate">шоколадные</label>
-												<input type="checkbox" name="filler" id="sugar_condiments" value="sugar_condiments"><label for="sugar_condiments">сахарные присыпки</label>
-												<input type="checkbox" name="filler" id="fruits" value="fruits"><label for="fruits">фрукты</label>
-												<input type="checkbox" name="filler" id="syrups" value="syrups"><label for="syrups">сиропы</label>
-												<input type="checkbox" name="filler" id="jams" value="jams"><label for="jams">джемы</label>
+								<div class="input-form__group">
+										<div class="input-form">
+											<p class="input-form__title">Сортировка:</p>
+											<select class="input-form_style" name="sort" id="sort">
+													<option value="option-1">по популярности</option>
+											</select>
 										</div>
-								</div>
-								<input class="input-form_style" type="submit" value="Применить">
+										<div class="input-form">
+												<p class="input-form__title">Цена: 100 руб. - 500 руб.</p>
+												<input class="input-form_style" type="range" name="price" id="price" min="100" max="500" step="5">
+										</div>
+										<div class="input-form input-form__fat">
+												<p class="input-form__title">Жирность:</p>
+												<div class="input-form_style form__fat">
+														<input type="radio" name="fat" id="0%" value="0%"><label for="0%">0%</label>
+														<input type="radio" name="fat" id="less10%" value="less10%"><label for="less10%">до 10%</label>
+														<input type="radio" name="fat" id="less30%" value="less30%"><label for="less30%">до 30%</label>
+														<input type="radio" name="fat" id="more30%" value="more30%"><label for="more30%">выше 30%</label>
+												</div>
+										</div>
+							</div>
+							<div class="input-form__group">
+										<div class="input-form input-form__filler">
+												<p class="input-form__title">Наполнители:</p>
+												<div class="input-form_style form__filler">
+														<input type="checkbox" name="filler" id="chocolate" value="chocolate"><label for="chocolate">шоколадные</label>
+														<input type="checkbox" name="filler" id="sugar_condiments" value="sugar_condiments"><label for="sugar_condiments">сахарные присыпки</label>
+														<input type="checkbox" name="filler" id="fruits" value="fruits"><label for="fruits">фрукты</label>
+														<input type="checkbox" name="filler" id="syrups" value="syrups"><label for="syrups">сиропы</label>
+														<input type="checkbox" name="filler" id="jams" value="jams"><label for="jams">джемы</label>
+												</div>
+										</div>
+										<input class="input-form_style input-form__submit" type="submit" value="Применить">
+							</div>
 						</fieldset>
 				</form>
 
@@ -236,21 +279,29 @@
 				</section>
 
 				<section class="main__pagination">
-					 <nav aria-label="...">
 								<ul class="pagination">
 										<li class="page-item disabled">
 												<a class="page-link" href="#" tabindex="-1">&lt;</a>
 										</li>
-										<li class="page-item"><a class="page-link" href="#">1</a></li>
-										<li class="page-item active"><a class="page-link" href="#">2</a></li>
-										<li class="page-item"><a class="page-link" href="#">3</a></li>
-										<li class="page-item"><a class="page-link" href="#">4</a></li>
-										<li class="page-item"><a class="page-link" href="#">5</a></li>
+										<li class="page-item active">
+												<a class="page-link" href="#">1</a>
+										</li>
+										<li class="page-item">
+												<a class="page-link" href="#">2</a>
+										</li>
+										<li class="page-item">
+												<a class="page-link" href="#">3</a>
+										</li>
+										<li class="page-item">
+												<a class="page-link" href="#">4</a>
+										</li>
+										<li class="page-item">
+												<a class="page-link" href="#">5</a>
+										</li>
 										<li class="page-item">
 												<a class="page-link" href="#">&gt;</a>
 										</li>
 								</ul>
-						</nav>
 				</section>
 
 		</main>
