@@ -60,7 +60,7 @@
 										<a  class="btn main-header__btn main-header__btn-enter" href="#" target="_self" title="Вход в учётную запись">Вход</a>
 												<div class="main-header__buttons__dropdown main-header__buttons__dropdown-enter">
 													<form action="#" method="GET">
-															<input type="email" placeholder="Электронная почта">
+															<input type="email" placeholder="Электронная почта" tabindex="-1">
 															<input type="password" placeholder="Пароль">
 															<div class="enter__block">
 																	<input type="submit" class="btn-red btn-enter__block" value="Войти">
@@ -86,9 +86,9 @@
 																<p class="chosen-item__cost">300 руб.</p>
 														</div>
 														<div class="chosen-item chosen-item-2">
-																<img class="chosen-item__img" alt="Мороженое" width="40" height="40" src="img/hit-1.png">
+																<img class="chosen-item__img" alt="Мороженое" width="40" height="40" src="img/hit-3.png">
 																<p class="chosen-item__description">
-																	Пломбир с апельсиновым джемом
+																	Клубничный пломбир с присыпкой из белого шоколада. Очень вкусный, очень сладкий и совсем холодный.
 																</p>
 																<p class="chosen-item__quantity">
 																	1,5 кг х <span>200 руб.</span>
@@ -105,28 +105,33 @@
 	
 <main class="main-content">
 	 <div class="container">
-<!-- сделать с помощью радиокнопок -->
+
 	   <div class="main-content__slider">			 						
-						<input type="radio" name="slider" id="slider-radio-1" value="slider-1" checked>
-								<label class="breadcrumbs__item" for="slider-radio-1"></label>														
-						<input type="radio" name="slider" id="slider-radio-2" value="slider-2">
-								<label class="breadcrumbs__item" for="slider-radio-2"></label>														
-						<input type="radio" name="slider" id="slider-radio-3" value="slider-3">
-								<label class="breadcrumbs__item" for="slider-radio-3"></label>				
-						<div class="slider__proposal-1">
-								<p class="slider__proposal__title">Крем-брюле и пломбир<br> с малиновым джемом</p>
-								<a class="btn-red slider__btn" href="#" target="_self" title="Заказать мороженое">Давайте оба!</a>
+						<input type="radio" name="slider" id="slider-radio-1" checked>
+						<input type="radio" name="slider" id="slider-radio-2">
+						<input type="radio" name="slider" id="slider-radio-3">
+						<div class="slider-container">
+								<div class="slider__proposal-1" id="slider-1">
+										<p class="slider__proposal__title">Крем-брюле и пломбир<br> с малиновым джемом</p>
+										<a class="btn-red slider__btn" href="#" target="_self" title="Заказать мороженое">Давайте оба!</a>
+								</div>
+								<div class="slider__proposal-2" id="slider-2">
+										<p class="slider__proposal__title">Хрен-брюле и пломбир<br> с малиновым джемом</p>
+										<a class="btn-red slider__btn" href="#" target="_self" title="Заказать мороженое">Давайте оба!</a>
+								</div>
+								<div class="slider__proposal-3" id="slider-3">
+										<p class="slider__proposal__title">Крем-брюле и шашлык<br> с малиновым джемом</p>
+										<a class="btn-red slider__btn" href="#" target="_self" title="Заказать мороженое">Давайте три!</a>
+								</div>
+								<div class="slider-buttons">
+										<label class="breadcrumbs__item" for="slider-radio-1"></label>									
+										<label class="breadcrumbs__item" for="slider-radio-2"></label>									
+										<label class="breadcrumbs__item" for="slider-radio-3"></label>			
+								</div>
 						</div>
-						<div class="slider__proposal-2">
-								<p class="slider__proposal__title">Хрен-брюле и пломбир<br> с малиновым джемом</p>
-								<a class="btn-red slider__btn" href="#" target="_self" title="Заказать мороженое">Давайте оба!</a>
-						</div>
-						<div class="slider__proposal-3">
-								<p class="slider__proposal__title">Крем-брюле и шашлык<br> с малиновым джемом</p>
-								<a class="btn-red slider__btn" href="#" target="_self" title="Заказать мороженое">Давайте три!</a>
-						</div>				
+
 						<div class="slider__info">
-								<p class="slider__info__working-time">с 10 до 20, ежедневно</p>
+								<p class="slider__info__working-time">С 10 до 20, ежедневно</p>
 								<a class="slider__info__phone-number" href="tel:8 812 4502525" title="Связаться с компанией">8 812 450-25-25</a>
 						</div>
 				</div>
@@ -247,7 +252,7 @@
 
 		<section class="main-content__contact-us">
 				<iframe class="map" src="https://www.google.com/maps/d/u/0/embed?mid=1dVnV8hA3V-AqFMH8ceyAVkH2fdzRdpU0" 
-												width="640" height="480">
+												width="640" height="430">
 				</iframe>		
 		</section> 
 </main>
