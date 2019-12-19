@@ -916,6 +916,7 @@ text-align: right;
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
+	position: relative;
 }
 
 .popular-items__img {
@@ -1501,4 +1502,66 @@ background-color: red;
 	80% {transform: scaleX(1.15) scaleY(0.7) translateX(-43%) translateY(-50%)}
 	93% {transform: scaleX(0.95) scaleY(1.05) translateX(-51%) translateY(-65%)}
 	100% {transform: scaleX(1) scaleY(1) translateX(-50%) translateY(-50%)}
+}
+
+.icecream_detailed {
+	position: absolute;
+	z-index: 10000;
+	top: 46%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: none;
+	justify-content: space-between;
+	align-items: center;
+	flex-flow: column;
+	width: 300px;
+	min-height: 100%;
+	border-radius: 25px;
+	box-shadow: 5px 8px 12px #222;
+	padding: 15px;
+	box-sizing: border-box;
+	background-color: #849d8fe5;
+	font-size: 18px;
+}
+
+.id_img {
+	position: relative;
+}
+
+.id_img::before {
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	border: 2px solid white;
+	top: 0;
+	left: 0;
+	animation-name: wave;
+	animation-duration: 2s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+.id_title {
+	margin: 0 0 15px;
+}
+
+.id_desc {
+	font-weight: 700;
+	font-style: italic;
+	text-align: center;
+	margin: 5px 0;
+}
+
+.is_Shown {
+	display: flex;
+}
+
+@keyframes wave {
+	from {border: 1px solid #fff;}
+	to {
+		border: 20px solid transparent;
+		width: 300%;
+		height: 300%;
+	}
 }
